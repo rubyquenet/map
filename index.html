@@ -1,26 +1,79 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<title>my page</title>
-	<style>
-    h1{color: #a62e66;
-    font-family: garamond;
-    font-weight: bold;}
-    
-    .link{color: red;}
-    
+  <head>
+    <meta charset="utf-8">
+    <title>my page</title>
+
+    <style>
+      h1 {
+        color: rgb(0, 141, 255);
+        font-family: arial;
+        font-weight: bold;
+        /*inline - the element aka the box only as wide as the content
+      block - the element as wide as the page*/
+        text-align: center;
+        background: mustard;
+        border-style: solid;
+        border-color: pink;
+        padding: 90px;
+        /*the last line prevails in css*/
+      }
+
+      #map {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        /*common way to center images*/
+        width: 15px;
+        /*margin defines the outside space and padding defines the inside space*/
+      }
+
+      .link {
+        color: green;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+      }
+      
+      a:hover{
+        color: pink;
+        text-decoration: underline;
+      }
+
+      p {
+        margin: 0 auto;
+        width: 100%;
+        /*         text-align: center; */
+        font-family: helvetica;
+      }
+
+      nav {
+        width: 50%;
+        margin: 0 auto;
+        /*you don't have to specify 0 b/c 0px = 0%*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      
+      
     </style>
   </head>
-	<body>
-		
-    <h1>Ruby</h1>
-    
-    <nav>
-      <a class="link" href="https://rubyque.net/" target="_blank">website</a>
-      <a class="link" href="https://google.com" target="_blank">google</a>
-    
-      <!--id should only be used on one element-->
-    </nav>
-	</body>
+  <body>
+<main>
+      <h1>this is a map</h1>
+      <img src="map icon.jpeg" alt="an image of a map" id="map" href="https://rubyque.net" target="_blank">
+      <!--you can link any image on the web here, they may disappear-->
+
+      <p>things disappear</p>
+
+      <nav>
+        <a class="link" href="https://marklesflats.net/" target="_blank">markles</a>
+        <a class="link" href="https://google.com" target="_blank">google</a>
+
+        <!--id should only be used on one element-->
+      </nav>
+ </main>  
+  </body>
 </html>
